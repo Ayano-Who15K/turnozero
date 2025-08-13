@@ -5,16 +5,114 @@ const products = [
   {
     id: 1,
     name: 'Cerveja Heineken 330ml',
-    price: 8.99,
-    compareAtPrice: 10.0,
+    price: 10.00,
+    compareAtPrice: 12.0,
     category: 'Bebidas',
-    image: '',
+    image: 'assets/img/heinekenlongneck.png',
     tags: ['cerveja', 'gelada', 'alcoólica', 'promoção'],
-    stock: 50,
+    stock: 10,
     deliveryEtaMinutes: 25,
     description:
       'A clássica cerveja Heineken em sua versão de 330ml. Refrescante e ideal para qualquer momento.',
   },
+  {
+    id: 2,
+    name: "Energético Red Bull 250ml",
+    price: 14.00,
+    compareAtPrice: null,
+    category: "Energéticos",
+    image: "assets/img/Energetico_Red_Bull_lata_250ml.png",
+    tags: ["energético", "não alcoólica"],
+    stock: 30,
+    deliveryEtaMinutes: 20,
+    description: "O energético Red Bull em lata de 250ml. Te dá asas para o seu dia a dia!"
+},
+{
+    id: 3,
+    name: "Cerveja Corona Extra 355ml",
+    price: 12.00,
+    compareAtPrice: null,
+    category: "Bebidas",
+    image: "assets/img/CervejaCoronaExtra355ml.png",
+    tags: ["cerveja", "refrescante", "gelada"],
+    stock: 45,
+    deliveryEtaMinutes: 25,
+    description: "A cerveja mexicana Corona Extra. Perfeita com uma fatia de limão para um sabor único."
+},
+
+{
+  id: 4,
+  name: "Budweiser",
+  price: 12.00,
+  compareAtPrice: null,
+  category: "Bebidas",
+  image: "assets/img/BudweiserBeerAnheuserBuschLagerUnitedStates.png",
+  tags: ["cerveja", "refrescante", "gelada"],
+  stock: 45,
+  deliveryEtaMinutes: 25,
+  description: ""
+},
+
+
+{
+  id: 5,
+  name: "Cerveja Pilsen Sol Garrafa 330ml",
+  price: 12.00,
+  compareAtPrice: null,
+  category: "Bebidas",
+  image: "assets/img/CervejaPilsenSolGarrafa330ml.png",
+  tags: ["cerveja", "refrescante", "gelada"],
+  stock: 45,
+  deliveryEtaMinutes: 25,
+  description: ""
+},
+
+
+{
+  id: 6,
+  name: "Cerveja brahma long neck 355ml",
+  price: 12.00,
+  compareAtPrice: null,
+  category: "Bebidas",
+  image: "assets/img/brahmalongneck355mlBrahma.png",
+  tags: ["cerveja", "refrescante", "gelada"],
+  stock: 45,
+  deliveryEtaMinutes: 25,
+  description: ""
+},
+
+
+{
+  id: 7,
+  name: " Stella Artois long Neck 330ml",
+  price: 12.00,
+  compareAtPrice: null,
+  category: "Bebidas",
+  image: "assets/img/stellaartois.png",
+  tags: ["cerveja", "refrescante", "gelada"],
+  stock: 45,
+  deliveryEtaMinutes: 25,
+  description: ""
+},
+
+{
+  id: 8,
+  name: "Heineken Lata 350ml",
+  price: 12.00,
+  compareAtPrice: null,
+  category: "Bebidas",
+  image: "assets/img/heinekenlata350ml.png",
+  tags: ["cerveja", "refrescante", "gelada"],
+  stock: 45,
+  deliveryEtaMinutes: 25,
+  description: ""
+},
+
+
+
+
+
+
 ];
 // --- FIM DO CATÁLOGO DE PRODUTOS ---
 
@@ -41,8 +139,8 @@ const homeLink = document.getElementById('home-link');
 
 // --- Configurações da Loja (editar aqui) ---
 const config = {
-  whatsappNumber: '5548999999999', // Exemplo: 55DDDNUMERO
-  shippingFee: 10.0,
+  whatsappNumber: '5548996868430', // Exemplo: 55DDDNUMERO
+  shippingFee: 5.0,
   coupons: {
     NOITETZR5: { type: 'fixed', value: 5.0 },
     FRETEGRATIS100: { type: 'freeShipping', minValue: 100.0 },
@@ -297,8 +395,8 @@ function renderCart() {
     cartItemsContainer.innerHTML =
       '<p class="cart-empty">Seu carrinho está vazio.</p>';
     cartSubtotalEl.textContent = '0.00';
-    cartShippingEl.textContent = '10.00';
-    cartTotalEl.textContent = '10.00';
+    cartShippingEl.textContent = '0.00';
+    cartTotalEl.textContent = '0.00';
     return;
   }
 
