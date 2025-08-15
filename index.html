@@ -1,111 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Turno Zero Loja Online</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body class="dark-mode">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turno Zero</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
     <header class="header">
-      <nav class="header__nav">
-        <a href="index.html" class="header__logo">Turno Zero</a>
-        <div class="search-bar">
-          <input
-            type="text"
-            id="search-input"
-            placeholder="Buscar produtos..."
-          />
-          <button id="search-button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <div id="autocomplete-results" class="autocomplete-results"></div>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>Turno Zero</h1>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar produtos, marcas e muito mais...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-actions">
+                    <div class="cart-container">
+                        <button id="cartBtn" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cartCount" class="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="header__icons">
-          <button id="mode-toggle"><i class="fa-solid fa-moon"></i></button>
-          <a href="#" class="header__cart-icon" id="cart-icon">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span class="cart-badge" id="cart-badge">0</span>
-          </a>
-          <button class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-      <div class="header__categories" id="categories-menu"></div>
     </header>
 
-    <main class="container" id="main-content">
-      <section class="catalog" id="product-catalog">
-        <div id="product-list" class="product-grid"></div>
-      </section>
+    <!-- Categories -->
+    <nav class="categories">
+        <div class="container">
+            <ul class="category-list">
+                <li><a href="#" data-category="all">Todos</a></li>
+                <li><a href="#" data-category="bebidas">Bebidas</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2>Ofertas Imperdíveis</h2>
+                <p>Até 70% de desconto em produtos selecionados</p>
+                <button class="cta-btn">Ver Ofertas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <main class="main-content">
+        <div class="container">
+            <section class="products-section">
+                <h2>Produtos em Destaque</h2>
+                <div class="filters">
+                    <select id="sortSelect">
+                        <option value="relevance">Mais relevantes</option>
+                        <option value="price-low">Menor preço</option>
+                        <option value="price-high">Maior preço</option>
+                        <option value="name">Nome A-Z</option>
+                    </select>
+                </div>
+                <div id="productsGrid" class="products-grid">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+            </section>
+        </div>
     </main>
 
-    <div class="modal" id="cart-modal">
-      <div class="modal-content">
-        <span class="close-modal-btn" id="close-cart-btn">&times;</span>
-        <h2>Seu Carrinho</h2>
-        <div id="cart-items" class="cart-items"></div>
-        <div class="cart-summary">
-          <p>Subtotal: R$ <span id="cart-subtotal">0.00</span></p>
-          <p>Frete: R$ <span id="cart-shipping">0.00</span></p>
-          <p>Total: R$ <span id="cart-total">0.00</span></p>
-          <div class="coupon-area">
-            <input
-              type="text"
-              id="coupon-input"
-              placeholder="Cupom de desconto"
-            />
-            <button id="apply-coupon-btn">Aplicar</button>
-          </div>
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Carrinho de Compras</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems"></div>
+                <div class="cart-total">
+                    <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="clearCart" class="btn-secondary">Limpar Carrinho</button>
+                <button id="checkout" class="btn-primary">Finalizar Compra</button>
+            </div>
         </div>
-        <button id="checkout-btn" class="checkout-btn">
-          Finalizar Compra via WhatsApp
-        </button>
-      </div>
     </div>
 
-    <div id="checkout-modal" class="modal">
-      <div class="modal-content">
-        <span class="close-modal-btn" id="close-checkout-btn">&times;</span>
-        <h2>Dados para o Pedido</h2>
-        <form id="checkout-form">
-          <label for="client-name">Nome Completo:</label>
-          <input type="text" id="client-name" required />
-          <label for="client-address">Endereço:</label>
-          <input type="text" id="client-address" required />
-          <label for="client-notes">Observações:</label>
-          <textarea id="client-notes" rows="3"></textarea>
-          <button type="submit" class="checkout-btn">
-            Confirmar e Enviar Pedido
-          </button>
-        </form>
-      </div>
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="productModalBody">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
     </div>
 
-    <footer class="mobile-nav">
-      <a href="index.html" class="mobile-nav-item active" id="home-link"
-        ><i class="fa-solid fa-house"></i><span>Home</span></a
-      >
-      <a href="#" class="mobile-nav-item"
-        ><i class="fa-solid fa-magnifying-glass"></i><span>Buscar</span></a
-      >
-      <a href="#" class="mobile-nav-item cart-btn-mobile"
-        ><i class="fa-solid fa-cart-shopping"></i
-        ><span class="cart-badge" id="cart-badge-mobile">0</span
-        ><span>Carrinho</span></a
-      >
-      <a href="#" class="mobile-nav-item"
-        ><i class="fa-solid fa-user"></i><span>Perfil</span></a
-      >
-    </footer>
-
-    <div id="toast-container" class="toast-container"></div>
-
-    <script src="assets/js/app.js"></script>
-  </body>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
