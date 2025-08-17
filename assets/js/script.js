@@ -4,7 +4,7 @@ const products = [
     id: 1,
     title: "Brahma Lata 350ml",
     price: 5,
-    image: "../../assets/img/cervejaslata/brahmalata350ml.png",
+    image: "assets/img/cervejaslata/brahmalata350ml.png",
     category: "bebidas",
     description:
       "Refrescante, dourada e com espuma cremosa, a Brahma na lata é a companhia perfeita para qualquer momento. Seu sabor leve e equilibrado traz a harmonia ideal entre malte e lúpulo, tornando cada gole suave e prazeroso. Gelada, realça ainda mais sua personalidade marcante, sendo presença garantida em churrascos, festas e encontros com amigos. Prática e fácil de transportar, a lata preserva todo o frescor e aroma da cerveja, garantindo que a experiência Brahma seja sempre do primeiro ao último gole",
