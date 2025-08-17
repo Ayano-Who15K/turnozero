@@ -13,7 +13,7 @@ const products = [
   {
     id: 2,
     title: "Brahma Duplo Malte Lata 350ml",
-    price: 5,
+    price: 5.50,
     image: "assets/img/cervejaslata/brahmaduplomalte350ml.png",
     category: "bebidas",
     description:
@@ -23,7 +23,7 @@ const products = [
   {
     id: 3,
     title: "Budweiser Lata 350ml",
-    price: 5,
+    price: 6,
     image: "assets/img/cervejaslata/budweiserlata350ml.png",
     category: "bebidas",
     description:
@@ -43,7 +43,7 @@ const products = [
   {
     id: 5,
     title: "A Outra Lata 350ml",
-    price: 5,
+    price: 3,
     image: "assets/img/cervejaslata/aoutralata350ml.png",
     category: "bebidas",
     description: "Clara, leve e extremamente refrescante.",
@@ -52,7 +52,7 @@ const products = [
   {
     id: 6,
     title: "Heineken Lata 350ml",
-    price: 5,
+    price: 8,
     image: "assets/img/cervejaslata/heinekenlata350ml.png",
     category: "bebidas",
     description: "Clara, leve e extremamente refrescante.",
