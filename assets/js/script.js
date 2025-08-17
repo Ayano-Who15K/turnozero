@@ -4,58 +4,69 @@ const products = [
     id: 1,
     title: "Brahma Lata 350ml",
     price: 5,
-    image: "../../assets/img/cervejaslata/brahmalata.png",
+    image: "../../assets/img/cervejaslata/brahmalata350ml.png",
     category: "bebidas",
     description:
       "Refrescante, dourada e com espuma cremosa, a Brahma na lata é a companhia perfeita para qualquer momento. Seu sabor leve e equilibrado traz a harmonia ideal entre malte e lúpulo, tornando cada gole suave e prazeroso. Gelada, realça ainda mais sua personalidade marcante, sendo presença garantida em churrascos, festas e encontros com amigos. Prática e fácil de transportar, a lata preserva todo o frescor e aroma da cerveja, garantindo que a experiência Brahma seja sempre do primeiro ao último gole",
     installments: "Pacote 📦 com 12 latas sai por 60 reais",
   },
-  
-    {
+  {
     id: 2,
     title: "Brahma Duplo Malte Lata 350ml",
     price: 5,
-    image: "../../assets/img/cervejaslata/brahmaduplomaltelata.png",
+    image: "../../assets/img/cervejaslata/brahmaduplomalte350ml.png",
     category: "bebidas",
     description:
       "Brahma Duplo Malte combina o melhor de dois mundos: a suavidade do malte Pilsner com a intensidade do malte Munich. O resultado é uma cerveja dourada, encorpada na medida certa e com aroma marcante, mas que mantém a leveza perfeita para acompanhar qualquer ocasião. Na prática lata de 350ml, o frescor é preservado e o sabor é entregue como deve ser: equilibrado, cremoso e irresistível. Uma experiência pensada para quem aprecia mais sabor, sem abrir mão da suavidade.",
     installments: "Pacote 📦 com 12 latas sai por 60 reais",
   },
-  
   {
     id: 3,
     title: "Budweiser Lata 350ml",
     price: 5,
-    image: "../../assets/img/cervejaslata/BudweiserLata.png",
+    image: "../../assets/img/cervejaslata/budweiserlata350ml.png",
     category: "bebidas",
     description:
       "Com seu inconfundível aroma e sabor marcante, a Budweiser é produzida com malte de cevada selecionado e um toque especial de lúpulos aromáticos. Sua receita única, que inclui o exclusivo processo de maturação com lascas de madeira de faia (Beechwood Aging), garante uma cerveja suave, refrescante e com final limpo. Na lata, todo esse frescor é preservado, oferecendo a experiência Bud na medida certa para qualquer momento — do churrasco ao encontro casual com amigos.",
     installments: "Pacote 📦 com 12 latas sai por 60 reais",
   },
-  
-    {
+  {
     id: 4,
     title: "Antarctica Lata 350ml",
     price: 5,
-    image: "../../assets/img/cervejaslata/antarticalata.png",
+    image: "../../assets/img/cervejaslata/antarcticalata350ml.png",
     category: "bebidas",
     description:
       "Clara, leve e extremamente refrescante, a Antarctica é a escolha perfeita para quem busca sabor suave e momentos descontraídos. Produzida com malte, lúpulo e água de qualidade, traz o equilíbrio ideal entre aroma e leveza, tornando cada gole uma pausa para aproveitar a vida. Na lata, mantém o frescor e a temperatura por mais tempo, pronta para acompanhar aquele churrasco, roda de amigos ou qualquer celebração. Antarctica: o sabor oficial da boa companhia.",
     installments: "Pacote 📦 com 12 latas sai por 60 reais",
   },
-  
   {
     id: 5,
     title: "A Outra Lata 350ml",
     price: 5,
-    image: "../../assets/img/cervejaslata/aoutralata.png",
+    image: "../../assets/img/cervejaslata/aoutralata350ml.png",
     category: "bebidas",
-    description:
-      "Clara, leve e extremamente refrescante.",
+    description: "Clara, leve e extremamente refrescante.",
     installments: "Pacote 📦 com 12 latas sai por 60 reais",
   },
-  
-
+  {
+    id: 6,
+    title: "Heineken Lata 350ml",
+    price: 5,
+    image: "../../assets/img/cervejaslata/heinekenlata350ml.png",
+    category: "bebidas",
+    description: "Clara, leve e extremamente refrescante.",
+    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+  },
+  {
+    id: 7,
+    title: "Skol Lata 350ml",
+    price: 5,
+    image: "../../assets/img/cervejaslata/skollata350ml.png",
+    category: "bebidas",
+    description: "Clara, leve e extremamente refrescante.",
+    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+  },
 ]
 
 // Shopping cart
@@ -65,6 +76,7 @@ let cart = JSON.parse(localStorage.getItem("cart")) || []
 const searchInput = document.getElementById("searchInput")
 const searchBtn = document.getElementById("searchBtn")
 const productsGrid = document.getElementById("productsGrid")
+const productsGrid2 = document.getElementById("productsGrid2")
 const cartBtn = document.getElementById("cartBtn")
 const cartCount = document.getElementById("cartCount")
 const cartModal = document.getElementById("cartModal")
@@ -132,7 +144,6 @@ function setupEventListeners() {
 
   // Cart actions
   document.getElementById("clearCart").addEventListener("click", clearCart)
-  // The checkout button now calls the checkout function
   document.getElementById("checkout").addEventListener("click", checkout)
 }
 
@@ -178,7 +189,6 @@ function displayProducts() {
       filteredProducts.sort((a, b) => a.title.localeCompare(b.title))
       break
     default:
-      // Keep original order for relevance
       break
   }
 
@@ -258,6 +268,7 @@ function updateCartCount() {
 function openCartModal() {
   const cartItems = document.getElementById("cartItems")
   const cartTotal = document.getElementById("cartTotal")
+  const taxadeentrega = 5
 
   if (cart.length === 0) {
     cartItems.innerHTML = `
@@ -270,14 +281,15 @@ function openCartModal() {
     cartTotal.textContent = "0,00"
   } else {
     cartItems.innerHTML = ""
-    let total = 0
+    let subtotal = 0
 
     cart.forEach((item) => {
       const itemElement = createCartItem(item)
       cartItems.appendChild(itemElement)
-      total += item.price * item.quantity
+      subtotal += item.price * item.quantity
     })
 
+    const total = subtotal + taxadeentrega
     cartTotal.textContent = total.toFixed(2).replace(".", ",")
   }
 
@@ -315,7 +327,7 @@ function updateQuantity(productId, change) {
     removeFromCart(productId)
   } else {
     updateCart()
-    openCartModal() // Refresh cart modal
+    openCartModal()
   }
 }
 
@@ -323,7 +335,7 @@ function updateQuantity(productId, change) {
 function removeFromCart(productId) {
   cart = cart.filter((item) => item.id !== productId)
   updateCart()
-  openCartModal() // Refresh cart modal
+  openCartModal()
 }
 
 // Clear cart
@@ -331,26 +343,22 @@ function clearCart() {
   if (confirm("Tem certeza que deseja limpar o carrinho?")) {
     cart = []
     updateCart()
-    openCartModal() // Refresh cart modal
+    openCartModal()
   }
 }
 
-// Checkout - UPDATED
+// Checkout
 function checkout() {
   if (cart.length === 0) {
     alert("Seu carrinho está vazio!")
     return
   }
 
-  // Sends the order via WhatsApp
   sendOrderViaWhatsApp()
 
-  // Clears the cart after sending the order
   cart = []
   updateCart()
   cartModal.style.display = "none"
-
-  // Show success message
   showNotification("Pedido enviado! Em breve entraremos em contato.")
 }
 
@@ -385,7 +393,6 @@ function openProductModal(productId) {
 
 // Show notification
 function showNotification(message) {
-  // Create notification element
   const notification = document.createElement("div")
   notification.style.cssText = `
         position: fixed;
@@ -402,7 +409,6 @@ function showNotification(message) {
     `
   notification.textContent = message
 
-  // Add animation keyframes
   if (!document.querySelector("#notification-styles")) {
     const style = document.createElement("style")
     style.id = "notification-styles"
@@ -417,23 +423,17 @@ function showNotification(message) {
 
   document.body.appendChild(notification)
 
-  // Remove notification after 3 seconds
   setTimeout(() => {
     notification.remove()
   }, 3000)
 }
 
-/**
- * Sends the order details via WhatsApp.
- *
- * This function iterates through the cart items to create a formatted
- * text message with product names, quantities, and prices. It also calculates
- * the total order value and includes the current time. Finally, it builds
- * a WhatsApp API URL and opens a new window/tab to start the conversation.
- */
+// Send order via WhatsApp
 function sendOrderViaWhatsApp() {
-  const phoneNumber = "5548996868430" // Replace with the destination phone number
-  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
+  const phoneNumber = "5548996868430"
+  const taxadeentrega = 5
+  const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
+  const total = subtotal + taxadeentrega
   const now = new Date()
   const orderTime = now.toLocaleTimeString("pt-BR")
 
@@ -449,10 +449,9 @@ function sendOrderViaWhatsApp() {
   Subtotal: R$ ${itemTotal}\n`
   })
 
+  message += `\n*Taxa de Entrega:* R$ ${taxadeentrega.toFixed(2).replace(".", ",")}`
   message += `\n*Total do Pedido:* R$ ${total.toFixed(2).replace(".", ",")}`
 
   const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`
-
-  // Opens the WhatsApp conversation in a new tab
   window.open(whatsappURL, "_blank")
 }
