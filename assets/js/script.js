@@ -67,6 +67,280 @@ const products = [
     description: "Clara, leve e extremamente refrescante.",
     installments: "Pacote 📦 com 12 latas sai por 60 reais",
   },
+
+  {
+    id: 8,
+    title: "Amstel Lager Lata 350ml",
+    price: 5,
+    image: "assets/img/cervejaslata/amstellagerlata350ml.png",
+    category: "bebidas",
+    description: "Clara, leve e extremamente refrescante.",
+    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+  },
+
+  {
+    id: 9,
+    title: "Red Bull 250ml",
+    price: 12,
+    image: "assets/img/energeticolata/redbull250ml.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 12 latas sai por 144 reais",
+  },
+
+
+  {
+    id: 10,
+    title: "Monster tradicional 473ml",
+    price: 12,
+    image: "assets/img/energeticolata/monstertradicional473ml.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 12 latas sai por 144 reais",
+  },
+
+
+  {
+    id: 11,
+    title: "Monster Ultra 473ml",
+    price: 12,
+    image: "assets/img/energeticolata/monsterultra473ml.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 12 latas sai por 144 reais",
+  },
+
+  {
+    id: 12,
+    title: "Monster Juice 473ml",
+    price: 12,
+    image: "assets/img/energeticolata/monsterjuice473ml.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 12 latas sai por 144 reais",
+  },
+
+  {
+    id: 13,
+    title: "Baly maça verde 473ml",
+    price: 8,
+    image: "assets/img/energeticolata/balymacaverde473ml.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 12 latas sai por 96 reais",
+  },
+
+  {
+    id: 14,
+    title: "Baly Tradicional 473ml",
+    price: 8,
+    image: "assets/img/energeticolata/balytradicional473ml.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 12 latas sai por 96 reais",
+  },
+
+  {
+    id: 15,
+    title: "Baly Morango e Pessego 473ml",
+    price: 8,
+    image: "assets/img/energeticolata/balymorangoepessego473ml.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 12 latas sai por 96 reais",
+  },
+
+  {
+    id: 16,
+    title: "Baly Maça Verde 2L Pet",
+    price: 15,
+    image: "assets/img/energeticopet/balymacaverde2lpet.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 8 Garrafas sai por 120 reais",
+  },
+
+  {
+    id: 17,
+    title: "Baly Melancia 2L Pet",
+    price: 15,
+    image: "assets/img/energeticopet/balymelancia2lpet.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 8 Garrafas sai por 120 reais",
+  },
+
+  {
+    id: 18,
+    title: "Baly tradicional 2L Pet",
+    price: 15,
+    image: "assets/img/energeticopet/balytradicional2lpet.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 8 Garrafas sai por 120 reais",
+  },
+
+  {
+    id: 19,
+    title: "Baly Morango e Pessego 2L Pet",
+    price: 15,
+    image: "assets/img/energeticopet/balymorangoepessego2lpet.png",
+    category: "bebidas",
+    description: "Energetico Drink.",
+    installments: "Pacote 📦 com 8 Garrafas sai por 120 reais",
+  },
+
+  {
+    id: 20,
+    title: "Jack Daniel's N7 1L",
+    price: 160,
+    image: "assets/img/wiskes/21.png",
+    category: "bebidas",
+    description: "Jack Daniel's",
+    installments: "Pacote 📦 com 12 Garrafas sai por 1.920 reais",
+  },
+
+  {
+    id: 21,
+    title: "Jack Daniel's Apple 1L",
+    price: 165,
+    image: "assets/img/wiskes/22.png",
+    category: "bebidas",
+    description: "Jack Daniel's",
+    installments: "Pacote 📦 com 12 Garrafas sai por 1.980 reais",
+  },
+
+  {
+    id: 22,
+    title: "Jack Daniel's Honey 1L",
+    price: 165,
+    image: "assets/img/wiskes/23.png",
+    category: "bebidas",
+    description: "Jack Daniel's",
+    installments: "Pacote 📦 com 12 Garrafas sai por 1.980 reais",
+  },
+
+  {
+    id: 23,
+    title: "Red Label 1L",
+    price: 110,
+    image: "assets/img/wiskes/24.png",
+    category: "bebidas",
+    description: "Red Label 1L",
+    installments: "Pacote 📦 com 12 Garrafas sai por 1.320 reais",
+  },
+
+  {
+    id: 24,
+    title: "Black Label 750ml",
+    price: 180,
+    image: "assets/img/wiskes/25.png",
+    category: "bebidas",
+    description: "Black Label 750ml",
+    installments: "Pacote 📦 com 12 Garrafas sai por 2.160 reais",
+  },
+
+  {
+    id: 25,
+    title: "Gold Label 750ml",
+    price: 180,
+    image: "assets/img/wiskes/26.png",
+    category: "bebidas",
+    description: "Gold Label 750ml",
+    installments: "Pacote 📦 com 12 Garrafas sai por 2.160 reais",
+  },
+
+  {
+    id: 26,
+    title: "Passport Scotch 1L",
+    price: 65,
+    image: "assets/img/wiskes/27.png",
+    category: "bebidas",
+    description: "Passport Scotch 1L",
+    installments: "Pacote 📦 com 12 Garrafas sai por 780 reais",
+  },
+
+  {
+    id: 27,
+    title: "Black Stone 1L",
+    price: 30,
+    image: "assets/img/wiskes/28.png",
+    category: "bebidas",
+    description: "Black Stone 1L",
+    installments: "Pacote 📦 com 12 Garrafas sai por 360 reais",
+  },
+
+  {
+    id: 28,
+    title: "Passport Apple 1L",
+    price: 85,
+    image: "assets/img/wiskes/29.png",
+    category: "bebidas",
+    description: "Passport Apple 1L",
+    installments: "Pacote 📦 com 12 Garrafas sai por 1.020 reais",
+  },
+
+  {
+    id: 29,
+    title: "White Horse 1L",
+    price: 90,
+    image: "assets/img/wiskes/30.png",
+    category: "bebidas",
+    description: "White Horse 1L",
+    installments: "Pacote 📦 com 12 Garrafas sai por 1.080 reais",
+  },
+
+  {
+    id: 30,
+    title: "Hot Pocket X - Burguer",
+    price: 8,
+    image: "assets/img/comida/37.png",
+    category: "bebidas",
+    description: "Hot Pocket X - Burguer",
+    installments: "Pacote 📦 com 12 X-Burguer sai por 96 reais",
+  },
+
+  {
+    id: 31,
+    title: "Smash Burger",
+    price: 35,
+    image: "assets/img/comida/38.png",
+    category: "bebidas",
+    description: "Smash Burger",
+    installments: "Pacote 📦 com 12 Smash Burger sai por 420 reais",
+  },
+
+  {
+    id: 32,
+    title: "Absolut Vodka 1L",
+    price: 100,
+    image: "assets/img/vodka/31.png",
+    category: "bebidas",
+    description: "Absolut Vodka 1L",
+    installments: "Pacote 📦 com 12 Absolut Vodka 1L sai por 1.200 reais",
+  },
+
+  {
+    id: 33,
+    title: "Vodka Intencion 900ml",
+    price: 25,
+    image: "assets/img/vodka/32.png",
+    category: "bebidas",
+    description: "Vodka Intencion 900ml",
+    installments: "Pacote 📦 com 12 Vodka Intencion 900ml sai por 300 reais",
+  },
+
+  {
+    id: 34,
+    title: "Smirnoff Vodka 998ml",
+    price: 46,
+    image: "assets/img/vodka/33.png",
+    category: "bebidas",
+    description: "Smirnoff Vodka 998ml",
+    installments: "Pacote 📦 com 12 Smirnoff Vodka 998ml sai por 552 reais",
+  },
+
+
 ]
 
 // Shopping cart
