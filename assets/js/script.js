@@ -18,7 +18,7 @@ const products = [
     category: "bebidas",
     description:
       "Brahma Duplo Malte combina o melhor de dois mundos: a suavidade do malte Pilsner com a intensidade do malte Munich. O resultado é uma cerveja dourada, encorpada na medida certa e com aroma marcante, mas que mantém a leveza perfeita para acompanhar qualquer ocasião. Na prática lata de 350ml, o frescor é preservado e o sabor é entregue como deve ser: equilibrado, cremoso e irresistível. Uma experiência pensada para quem aprecia mais sabor, sem abrir mão da suavidade.",
-    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+    installments: "Pacote 📦 com 12 latas sai por 66 reais",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const products = [
     category: "bebidas",
     description:
       "Com seu inconfundível aroma e sabor marcante, a Budweiser é produzida com malte de cevada selecionado e um toque especial de lúpulos aromáticos. Sua receita única, que inclui o exclusivo processo de maturação com lascas de madeira de faia (Beechwood Aging), garante uma cerveja suave, refrescante e com final limpo. Na lata, todo esse frescor é preservado, oferecendo a experiência Bud na medida certa para qualquer momento — do churrasco ao encontro casual com amigos.",
-    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+    installments: "Pacote 📦 com 12 latas sai por 72 reais",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const products = [
     image: "assets/img/cervejaslata/aoutralata350ml.png",
     category: "bebidas",
     description: "Clara, leve e extremamente refrescante.",
-    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+    installments: "Pacote 📦 com 12 latas sai por 36 reais",
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ const products = [
     image: "assets/img/cervejaslata/heinekenlata350ml.png",
     category: "bebidas",
     description: "Clara, leve e extremamente refrescante.",
-    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+    installments: "Pacote 📦 com 12 latas sai por 96 reais",
   },
   {
     id: 7,
