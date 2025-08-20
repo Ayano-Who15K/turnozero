@@ -300,7 +300,8 @@ const products = [
     installments: "Pacote 📦 com 12 X-Burguer sai por 96 reais",
   },
 
-  {
+  /* Em Falta 
+      {
     id: 31,
     title: "Smash Burger",
     price: 35,
@@ -309,6 +310,8 @@ const products = [
     description: "Smash Burger",
     installments: "Pacote 📦 com 12 Smash Burger sai por 420 reais",
   },
+  
+  */
 
   {
     id: 32,
@@ -339,6 +342,8 @@ const products = [
     description: "Smirnoff Vodka 998ml",
     installments: "Pacote 📦 com 12 Smirnoff Vodka 998ml sai por 552 reais",
   },
+
+  
 
 
 ]
