@@ -8,7 +8,7 @@ const products = [
     category: "Cervejas",
     description:
       "Refrescante, dourada e com espuma cremosa, a Brahma na lata é a companhia perfeita para qualquer momento. Seu sabor leve e equilibrado traz a harmonia ideal entre malte e lúpulo, tornando cada gole suave e prazeroso. Gelada, realça ainda mais sua personalidade marcante, sendo presença garantida em churrascos, festas e encontros com amigos. Prática e fácil de transportar, a lata preserva todo o frescor e aroma da cerveja, garantindo que a experiência Brahma seja sempre do primeiro ao último gole",
-    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+    installments: "Pacote 📦 com 12 latas sai por 66 reais",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const products = [
     category: "Cervejas",
     description:
       "Brahma Duplo Malte combina o melhor de dois mundos: a suavidade do malte Pilsner com a intensidade do malte Munich. O resultado é uma cerveja dourada, encorpada na medida certa e com aroma marcante, mas que mantém a leveza perfeita para acompanhar qualquer ocasião. Na prática lata de 350ml, o frescor é preservado e o sabor é entregue como deve ser: equilibrado, cremoso e irresistível. Uma experiência pensada para quem aprecia mais sabor, sem abrir mão da suavidade.",
-    installments: "Pacote 📦 com 12 latas sai por 66 reais",
+    installments: "Pacote 📦 com 12 latas sai por 72 reais",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const products = [
     category: "Cervejas",
     description:
       "Com seu inconfundível aroma e sabor marcante, a Budweiser é produzida com malte de cevada selecionado e um toque especial de lúpulos aromáticos. Sua receita única, que inclui o exclusivo processo de maturação com lascas de madeira de faia (Beechwood Aging), garante uma cerveja suave, refrescante e com final limpo. Na lata, todo esse frescor é preservado, oferecendo a experiência Bud na medida certa para qualquer momento — do churrasco ao encontro casual com amigos.",
-    installments: "Pacote 📦 com 12 latas sai por 72 reais",
+    installments: "Pacote 📦 com 12 latas sai por 78 reais",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const products = [
     category: "Cervejas",
     description:
       "Clara, leve e extremamente refrescante, a Antarctica é a escolha perfeita para quem busca sabor suave e momentos descontraídos. Produzida com malte, lúpulo e água de qualidade, traz o equilíbrio ideal entre aroma e leveza, tornando cada gole uma pausa para aproveitar a vida. Na lata, mantém o frescor e a temperatura por mais tempo, pronta para acompanhar aquele churrasco, roda de amigos ou qualquer celebração. Antarctica: o sabor oficial da boa companhia.",
-    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+    installments: "Pacote 📦 com 12 latas sai por 66 reais",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const products = [
     image: "assets/img/cervejaslata/aoutralata350ml.png",
     category: "Cervejas",
     description: "Clara, leve e extremamente refrescante.",
-    installments: "Pacote 📦 com 12 latas sai por 36 reais",
+    installments: "Pacote 📦 com 12 latas sai por 54 reais",
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ const products = [
     image: "assets/img/cervejaslata/heinekenlata350ml.png",
     category: "Cervejas",
     description: "Clara, leve e extremamente refrescante.",
-    installments: "Pacote 📦 com 12 latas sai por 96 reais",
+    installments: "Pacote 📦 com 12 latas sai por 102 reais",
   },
   {
     id: 7,
@@ -65,7 +65,7 @@ const products = [
     image: "assets/img/cervejaslata/skollata350ml.png",
     category: "Cervejas",
     description: "Clara, leve e extremamente refrescante.",
-    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+    installments: "Pacote 📦 com 12 latas sai por 66 reais",
   },
 
   {
@@ -75,7 +75,7 @@ const products = [
     image: "assets/img/cervejaslata/amstellagerlata350ml.png",
     category: "Cervejas",
     description: "Clara, leve e extremamente refrescante.",
-    installments: "Pacote 📦 com 12 latas sai por 60 reais",
+    installments: "Pacote 📦 com 12 latas sai por 66 reais",
   },
 
   {
@@ -85,7 +85,7 @@ const products = [
     image: "assets/img/energeticolata/redbull250ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 12 latas sai por 144 reais",
+    installments: "Pacote 📦 com 12 latas sai por 150 reais",
   },
 
 
@@ -96,7 +96,7 @@ const products = [
     image: "assets/img/energeticolata/monstertradicional473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 12 latas sai por 144 reais",
+    installments: "Pacote 📦 com 12 latas sai por 150 reais",
   },
 
 
@@ -107,7 +107,7 @@ const products = [
     image: "assets/img/energeticolata/monsterultra473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 12 latas sai por 144 reais",
+    installments: "Pacote 📦 com 12 latas sai por 150 reais",
   },
 
   {
@@ -117,7 +117,7 @@ const products = [
     image: "assets/img/energeticolata/monsterjuice473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 12 latas sai por 144 reais",
+    installments: "Pacote 📦 com 12 latas sai por 150 reais",
   },
 
   {
@@ -127,7 +127,7 @@ const products = [
     image: "assets/img/energeticolata/balymacaverde473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 12 latas sai por 96 reais",
+    installments: "Pacote 📦 com 12 latas sai por 102 reais",
   },
 
   {
@@ -137,7 +137,7 @@ const products = [
     image: "assets/img/energeticolata/balytradicional473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 12 latas sai por 96 reais",
+    installments: "Pacote 📦 com 12 latas sai por 102 reais",
   },
 
   {
@@ -147,7 +147,7 @@ const products = [
     image: "assets/img/energeticolata/balymorangoepessego473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 12 latas sai por 96 reais",
+    installments: "Pacote 📦 com 12 latas sai por 102 reais",
   },
 
   {
@@ -157,7 +157,7 @@ const products = [
     image: "assets/img/energeticopet/balymacaverde2lpet.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 8 Garrafas sai por 120 reais",
+    installments: "Pacote 📦 com 8 Garrafas sai por 112 reais",
   },
 
   {
@@ -167,7 +167,7 @@ const products = [
     image: "assets/img/energeticopet/balymelancia2lpet.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 8 Garrafas sai por 120 reais",
+    installments: "Pacote 📦 com 8 Garrafas sai por 112 reais",
   },
 
   {
@@ -177,7 +177,7 @@ const products = [
     image: "assets/img/energeticopet/balytradicional2lpet.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 8 Garrafas sai por 120 reais",
+    installments: "Pacote 📦 com 8 Garrafas sai por 112 reais",
   },
 
   {
@@ -187,7 +187,7 @@ const products = [
     image: "assets/img/energeticopet/balymorangoepessego2lpet.png",
     category: "Energetico",
     description: "Energetico Drink.",
-    installments: "Pacote 📦 com 8 Garrafas sai por 120 reais",
+    installments: "Pacote 📦 com 8 Garrafas sai por 112 reais",
   },
 
   {
@@ -197,7 +197,7 @@ const products = [
     image: "assets/img/wiskes/21.png",
     category: "whisky",
     description: "Jack Daniel's",
-    installments: "Pacote 📦 com 12 Garrafas sai por 1.920 reais",
+    installments: "Pacote 📦 com 12 Garrafas sai por 1.980 reais",
   },
 
   {
@@ -237,7 +237,7 @@ const products = [
     image: "assets/img/wiskes/25.png",
     category: "whisky",
     description: "Black Label 750ml",
-    installments: "Pacote 📦 com 12 Garrafas sai por 2.160 reais",
+    installments: "Pacote 📦 com 12 Garrafas sai por 2.400 reais",
   },
 
   {
@@ -297,7 +297,7 @@ const products = [
     image: "assets/img/comida/37.png",
     category: "lanches",
     description: "Hot Pocket X - Burguer",
-    installments: "Pacote 📦 com 12 X-Burguer sai por 96 reais",
+    installments: "Pacote 📦 com 12 X-Burguer sai por 102 reais",
   },
 
   /* Em Falta 
@@ -320,7 +320,7 @@ const products = [
     image: "assets/img/vodka/31.png",
     category: "Vodka",
     description: "Absolut Vodka 1L",
-    installments: "Pacote 📦 com 12 Absolut Vodka 1L sai por 1.200 reais",
+    installments: "Pacote 📦 com 12 Absolut Vodka 1L sai por 1.140 reais",
   },
 
   {
