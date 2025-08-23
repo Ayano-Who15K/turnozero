@@ -3,7 +3,7 @@ const products = [
   {
     id: 1,
     title: "Brahma Lata 350ml",
-    price: 6.50,
+    price: 5.50,
     image: "assets/img/cervejaslata/brahmalata350ml.png",
     category: "Cervejas",
     description:
@@ -13,7 +13,7 @@ const products = [
   {
     id: 2,
     title: "Brahma Duplo Malte Lata 350ml",
-    price: 7.50,
+    price: 6,
     image: "assets/img/cervejaslata/brahmaduplomalte350ml.png",
     category: "Cervejas",
     description:
@@ -23,7 +23,7 @@ const products = [
   {
     id: 3,
     title: "Budweiser Lata 350ml",
-    price: 7.50,
+    price: 6.50,
     image: "assets/img/cervejaslata/budweiserlata350ml.png",
     category: "Cervejas",
     description:
@@ -33,7 +33,7 @@ const products = [
   {
     id: 4,
     title: "Antarctica Lata 350ml",
-    price: 6.50,
+    price: 5.50,
     image: "assets/img/cervejaslata/antarcticalata350ml.png",
     category: "Cervejas",
     description:
@@ -43,7 +43,7 @@ const products = [
   {
     id: 5,
     title: "A Outra Lata 350ml",
-    price: 5.50,
+    price: 4.50,
     image: "assets/img/cervejaslata/aoutralata350ml.png",
     category: "Cervejas",
     description: "Clara, leve e extremamente refrescante.",
@@ -52,7 +52,7 @@ const products = [
   {
     id: 6,
     title: "Heineken Lata 350ml",
-    price: 9.50,
+    price: 8.50,
     image: "assets/img/cervejaslata/heinekenlata350ml.png",
     category: "Cervejas",
     description: "Clara, leve e extremamente refrescante.",
@@ -61,7 +61,7 @@ const products = [
   {
     id: 7,
     title: "Skol Lata 350ml",
-    price: 6.50,
+    price: 5.50,
     image: "assets/img/cervejaslata/skollata350ml.png",
     category: "Cervejas",
     description: "Clara, leve e extremamente refrescante.",
@@ -71,7 +71,7 @@ const products = [
   {
     id: 8,
     title: "Amstel Lager Lata 350ml",
-    price: 6.50,
+    price: 5.50,
     image: "assets/img/cervejaslata/amstellagerlata350ml.png",
     category: "Cervejas",
     description: "Clara, leve e extremamente refrescante.",
@@ -81,7 +81,7 @@ const products = [
   {
     id: 9,
     title: "Red Bull 250ml",
-    price: 13.50,
+    price: 12.50,
     image: "assets/img/energeticolata/redbull250ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -92,7 +92,7 @@ const products = [
   {
     id: 10,
     title: "Monster tradicional 473ml",
-    price: 13.50,
+    price: 12.50,
     image: "assets/img/energeticolata/monstertradicional473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -103,7 +103,7 @@ const products = [
   {
     id: 11,
     title: "Monster Ultra 473ml",
-    price: 13.50,
+    price: 12.50,
     image: "assets/img/energeticolata/monsterultra473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -113,7 +113,7 @@ const products = [
   {
     id: 12,
     title: "Monster Juice 473ml",
-    price: 13.50,
+    price: 12.50,
     image: "assets/img/energeticolata/monsterjuice473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -123,7 +123,7 @@ const products = [
   {
     id: 13,
     title: "Baly maça verde 473ml",
-    price: 9.50,
+    price: 8.50,
     image: "assets/img/energeticolata/balymacaverde473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -133,7 +133,7 @@ const products = [
   {
     id: 14,
     title: "Baly Tradicional 473ml",
-    price: 9.50,
+    price: 8.50,
     image: "assets/img/energeticolata/balytradicional473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -143,7 +143,7 @@ const products = [
   {
     id: 15,
     title: "Baly Morango e Pessego 473ml",
-    price: 9.50,
+    price: 8.50,
     image: "assets/img/energeticolata/balymorangoepessego473ml.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -153,7 +153,7 @@ const products = [
   {
     id: 16,
     title: "Baly Maça Verde 2L Pet",
-    price: 15,
+    price: 14,
     image: "assets/img/energeticopet/balymacaverde2lpet.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -163,7 +163,7 @@ const products = [
   {
     id: 17,
     title: "Baly Melancia 2L Pet",
-    price: 15,
+    price: 14,
     image: "assets/img/energeticopet/balymelancia2lpet.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -173,7 +173,7 @@ const products = [
   {
     id: 18,
     title: "Baly tradicional 2L Pet",
-    price: 15,
+    price: 14,
     image: "assets/img/energeticopet/balytradicional2lpet.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -183,7 +183,7 @@ const products = [
   {
     id: 19,
     title: "Baly Morango e Pessego 2L Pet",
-    price: 15,
+    price: 14,
     image: "assets/img/energeticopet/balymorangoepessego2lpet.png",
     category: "Energetico",
     description: "Energetico Drink.",
@@ -223,7 +223,7 @@ const products = [
   {
     id: 23,
     title: "Red Label 1L",
-    price: 115,
+    price: 110,
     image: "assets/img/wiskes/24.png",
     category: "whisky",
     description: "Red Label 1L",
@@ -233,7 +233,7 @@ const products = [
   {
     id: 24,
     title: "Black Label 750ml",
-    price: 185,
+    price: 200,
     image: "assets/img/wiskes/25.png",
     category: "whisky",
     description: "Black Label 750ml",
@@ -243,7 +243,7 @@ const products = [
   {
     id: 25,
     title: "Gold Label 750ml",
-    price: 185,
+    price: 200,
     image: "assets/img/wiskes/26.png",
     category: "whisky",
     description: "Gold Label 750ml",
@@ -293,7 +293,7 @@ const products = [
   {
     id: 30,
     title: "Hot Pocket X - Burguer",
-    price: 8,
+    price: 8.50,
     image: "assets/img/comida/37.png",
     category: "lanches",
     description: "Hot Pocket X - Burguer",
@@ -316,7 +316,7 @@ const products = [
   {
     id: 32,
     title: "Absolut Vodka 1L",
-    price: 100,
+    price: 95,
     image: "assets/img/vodka/31.png",
     category: "Vodka",
     description: "Absolut Vodka 1L",
@@ -336,7 +336,7 @@ const products = [
   {
     id: 34,
     title: "Smirnoff Vodka 998ml",
-    price: 46,
+    price: 45,
     image: "assets/img/vodka/33.png",
     category: "Vodka",
     description: "Smirnoff Vodka 998ml",
