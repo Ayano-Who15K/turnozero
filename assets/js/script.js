@@ -247,7 +247,7 @@ const products = [
     image: "assets/img/wiskes/26.png",
     category: "whisky",
     description: "Gold Label 750ml",
-    installments: "Pacote 📦 com 12 Garrafas sai por 2.160 reais",
+    installments: "Pacote 📦 com 12 Garrafas sai por 2.400 reais",
   },
 
   {
