@@ -233,21 +233,21 @@ const products = [
   {
     id: 24,
     title: "Black Label 750ml",
-    price: 200,
+    price: 205.00,
     image: "assets/img/wiskes/25.png",
     category: "whisky",
     description: "Black Label 750ml",
-    installments: "Pacote 📦 com 12 Garrafas sai por 2.400 reais",
+    installments: "Pacote 📦 com 12 Garrafas sai por 2,460 reais",
   },
 
   {
     id: 25,
     title: "Gold Label 750ml",
-    price: 200,
+    price: 370.00,
     image: "assets/img/wiskes/26.png",
     category: "whisky",
     description: "Gold Label 750ml",
-    installments: "Pacote 📦 com 12 Garrafas sai por 2.400 reais",
+    installments: "Pacote 📦 com 12 Garrafas sai por 4,440 reais",
   },
 
   {
@@ -283,7 +283,7 @@ const products = [
   {
     id: 29,
     title: "White Horse 1L",
-    price: 90,
+    price: 95,
     image: "assets/img/wiskes/30.png",
     category: "whisky",
     description: "White Horse 1L",
@@ -293,11 +293,11 @@ const products = [
   {
     id: 30,
     title: "Hot Pocket X - Burguer",
-    price: 8.50,
+    price: 10.00,
     image: "assets/img/comida/37.png",
     category: "lanches",
     description: "Hot Pocket X - Burguer",
-    installments: "Pacote 📦 com 12 X-Burguer sai por 102 reais",
+    installments: "Pacote 📦 com 12 X-Burguer sai por 120 reais",
   },
 
   /* Em Falta 
@@ -343,6 +343,15 @@ const products = [
     installments: "Pacote 📦 com 12 Smirnoff Vodka 998ml sai por 552 reais",
   },
 
+  {
+    id: 35,
+    title: "Proibida Lata 350ml",
+    price: 3.50,
+    image: "assets/img/cervejaslata/proibidalata350ml.png",
+    category: "Cervejas",
+    description: "Espuma clara, abundante, cremosa e natural. Baixo teor  de açúcares residuais, densidade equilibrada e perfil adequado.",
+    installments: "Pacote 📦 com 12 latas sai por 42 reais",
+  },
   
 
 
